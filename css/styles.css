@@ -1,3 +1,4 @@
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: #FFFFFF;
@@ -59,6 +60,7 @@ img {
     display: flex;
     gap: 40px;
 }
+
 .menu-link {
     display: block;
     padding: 24px 0;
@@ -68,6 +70,22 @@ img {
     font-weight: 500;
     letter-spacing: 0.02em;
 }
+.menu-link.studio {
+position: relative;
+}
+
+.menu-link.studio:hover::after, .menu-link.studio:focus::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -1px;
+   background-color: #404BBF;
+   border-radius: 2px;
+   width: 48px;
+   height: 4px;
+}
+
+
 .navi .accent {
     color:#2E2F42;
 }
@@ -99,6 +117,11 @@ img {
 .hero {
     padding: 188px 0;
     background-color:#2E2F42;
+    background-image: linear-gradient(to top, rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
 }
 .hero .container {
     align-items: center;
@@ -161,6 +184,17 @@ img {
 .section-second .item {
     width: calc((100% - 72px) / 4);
 }
+.section-second .benefits-icon {
+    background-color: #F4F4FD;
+    width: 246px;
+    height: 112px;
+}
+.section-second .icon {
+    display: block;
+    width: 46px;
+    height: 46px;
+    
+}
  .section-second .mini-title {
     font-weight: 500;
     font-size: 20px;
@@ -199,6 +233,9 @@ img {
     border-bottom-left-radius: 4px ;
     border-bottom-right-radius: 4px ;
     text-align: center;
+    box-shadow: 0 2px 1px 0 #2E2F4214, 
+     0 1px 1px 0 #2E2F4214, 
+     0 1px 6px 0 #2E2F4214;
 }
 .section-third .wrap {
     padding: 32px 0;
@@ -215,6 +252,32 @@ img {
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+.section-third .socials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+    
+}
+
+.section-third .icon-bg {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    align-items: center;
+    justify-content: center;
+}
+.section-third .icon-bg:hover, 
+.section-third .icon-bg:focus {
+    background-color: #31D0AA;
+}
+.section-third .icon {
+    fill:#F4F4FD;
 }
 /* section 4 */
 
