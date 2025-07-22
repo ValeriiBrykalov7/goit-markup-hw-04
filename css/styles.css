@@ -429,8 +429,8 @@ width: 100%;
     display: flex;
     gap: 16px;
 }
-.icon-bg:hover,
-.icon-bg:focus {
+.end .icon-bg:hover,
+.end .icon-bg:focus {
     background-color: #31D0AA;
 }
 .icon-footer {
